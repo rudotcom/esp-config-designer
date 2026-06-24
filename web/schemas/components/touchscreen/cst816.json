@@ -1,0 +1,35 @@
+{
+  "id": "touchscreen.cst816",
+  "domain": "touchscreen",
+  "platform": "cst816",
+  "helpUrl": "https://esphome.io/components/touchscreen/cst816/",
+  "extends": "base_touchscreen.json",
+  "requirements": [
+    {
+      "require": "bus:i2c"
+    }
+  ],
+  "fields": [
+    {
+      "key": "interrupt_pin",
+      "type": "gpio",
+      "required": false,
+      "lvl": "simple",
+      "placeholder": "GPIOXX"
+    },
+    {
+      "key": "reset_pin",
+      "type": "gpio",
+      "required": false,
+      "lvl": "simple",
+      "placeholder": "GPIOXX"
+    },
+    {
+      "key": "skip_probe",
+      "type": "boolean",
+      "required": false,
+      "lvl": "normal",
+      "default": false
+    }
+  ]
+}

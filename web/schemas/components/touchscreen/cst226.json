@@ -1,0 +1,28 @@
+{
+  "id": "touchscreen.cst226",
+  "domain": "touchscreen",
+  "platform": "cst226",
+  "helpUrl": "https://esphome.io/components/touchscreen/cst226/",
+  "extends": "base_touchscreen.json",
+  "requirements": [
+    {
+      "require": "bus:i2c"
+    }
+  ],
+  "fields": [
+    {
+      "key": "interrupt_pin",
+      "type": "gpio",
+      "required": false,
+      "lvl": "simple",
+      "placeholder": "GPIOXX"
+    },
+    {
+      "key": "reset_pin",
+      "type": "gpio",
+      "required": false,
+      "lvl": "simple",
+      "placeholder": "GPIOXX"
+    }
+  ]
+}

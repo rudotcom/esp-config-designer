@@ -1,0 +1,15 @@
+{
+  "id": "base.audio_dac",
+  "domain": "audio_dac",
+  "platform": "",
+  "type": "object",
+  "fields": [
+    {
+      "key": "id",
+      "placeholder": "audio_dac_id",
+      "type": "id",
+      "required": false,
+      "lvl": "simple"
+    }
+  ]
+}

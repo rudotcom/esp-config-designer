@@ -1,0 +1,28 @@
+{
+  "id": "touchscreen.ft63x6",
+  "domain": "touchscreen",
+  "platform": "ft63x6",
+  "helpUrl": "https://esphome.io/components/touchscreen/ft63x6/",
+  "extends": "base_touchscreen.json",
+  "requirements": [
+    {
+      "require": "bus:i2c"
+    }
+  ],
+  "fields": [
+    {
+      "key": "reset_pin",
+      "type": "gpio",
+      "required": false,
+      "lvl": "simple",
+      "placeholder": "GPIOXX"
+    },
+    {
+      "key": "interrupt_pin",
+      "type": "gpio",
+      "required": false,
+      "lvl": "simple",
+      "placeholder": "GPIOXX"
+    }
+  ]
+}

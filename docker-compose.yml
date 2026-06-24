@@ -1,0 +1,18 @@
+services:
+  esp-config-designer:
+    build: .
+    container_name: esp-config-designer
+    ports:
+      - "8099:8099"
+    volumes:
+      # Persistent config: projects, YAML files, assets, secrets
+      - ./config:/config
+      # Persistent runtime data: jobs, devices, esphome cache
+      - ./data:/data
+      # Optional: ESPHome builds cache for faster compiles
+      - ./build:/build
+    environment:
+      - PORT=8099
+      - USE_ESPHOME_SHARED_PATH=0
+      - TZ=Asia/Bangkok
+    restart: unless-stopped

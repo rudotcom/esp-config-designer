@@ -1,0 +1,21 @@
+{
+  "id": "touchscreen.chsc6x",
+  "domain": "touchscreen",
+  "platform": "chsc6x",
+  "helpUrl": "https://esphome.io/components/touchscreen/chsc6x/",
+  "extends": "base_touchscreen.json",
+  "requirements": [
+    {
+      "require": "bus:i2c"
+    }
+  ],
+  "fields": [
+    {
+      "key": "interrupt_pin",
+      "type": "gpio",
+      "required": false,
+      "lvl": "simple",
+      "placeholder": "GPIOXX"
+    }
+  ]
+}
